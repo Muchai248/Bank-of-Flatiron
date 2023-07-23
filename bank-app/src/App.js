@@ -5,10 +5,7 @@ import SearchBar from "./component/SearchBar";
 function App() {
   return (
     <>
-    <div className="ui raised segment">
-      <div className="ui segment violet inverted">
-       
-      </div>
+    <div>
       <Header/>
       <SearchBar/>
     </div>
