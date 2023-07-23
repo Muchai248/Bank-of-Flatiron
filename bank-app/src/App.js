@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./component/Header";
+import SearchBar from "./component/SearchBar";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
        
       </div>
       <Header/>
+      <SearchBar/>
     </div>
     </>
   );
