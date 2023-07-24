@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Form(){
+function Form({transaction}){
+
+    const[formData, setFormData]= useState({
+      "date":"",
+       "description":"",
+       "amount":"",
+       "category":"",
+    })
+
+    function handleChange(event){
+        console.log(event.target.name)
+        setFormData({ 
+            ...formData,
+            [event.target.name]: event.target.value
+
+    })
+      console.log(formData)  
+    }
+    
 
     const handleClick = () => {
-        const newData = {  };
+        
+        const newData = {};
     
         fetch('http://localhost:8001/transactions', {
           method: 'POST',
@@ -24,12 +43,12 @@ function Form(){
        <div>
             
             <label>Date:</label>
-            <input type="date" style={{marginTop:"50px"}}></input>
-            <input type="text" placeholder="Description" ></input>
-            <input type="text" placeholder="Category"></input>
-            <input type="text" placeholder="Amount"></input>
+            <input onChange={handleChange} name="date" type="date" value={formData.date} style={{marginTop:"50px"}}></input>
+            <input onChange={handleChange} name="description"type="text" value={formData.description}placeholder="Description" ></input>
+            <input onChange={handleChange} name="category"type="text" value={formData.category}placeholder="Category"></input>
+            <input onChange={handleChange} name="amount"type="text" value={formData.amount}placeholder="Amount"></input>
         </div>
-            <button onClick={handleClick}>Transaction</button>
+            <button onClick={handleClick}>Transact</button>
         
         
         </>

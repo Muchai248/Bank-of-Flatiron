@@ -15,7 +15,11 @@ const [hint, setHint]= useState("")
         const results=transaction.filter(tran=> {
             return tran.description.toLowerCase().includes(hint.toLowerCase())
         })
-        setTransactions(results)
+        if (hint){
+            setTransactions(results)
+        }else{
+            setTransactions(originalTransaction)
+        }
     }
     return(
         <>
