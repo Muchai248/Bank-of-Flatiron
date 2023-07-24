@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import Header from "./component/Header";
 import SearchBar from "./component/SearchBar";
+import TransactionItem from "./component/TransactionItem";
+import "./App.css";
 
 import Transaction from "./component/Transaction";
 
@@ -20,6 +22,7 @@ function App() {
   return (
     <>
     <div>
+      <TransactionItem/>
       <Header/>
       <SearchBar/>
    
