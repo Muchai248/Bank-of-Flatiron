@@ -8,12 +8,17 @@ import Transaction from "./component/Transaction";
 
 
 function App() {
+const[originalTransaction, setoriginalTransaction]=useState([])
+
 
   const[transaction, setTransactions]=useState([])
   useEffect(()=>{
     fetch(" http://localhost:8001/transactions")
     .then(resp=>resp.json())
-    .then(transc=>setTransactions(transc))
+    .then(transc=>{
+      setTransactions(transc)
+      setoriginalTransaction(transc)
+    })
   },[])
   console.log(transaction)
 
@@ -25,7 +30,7 @@ function App() {
     
       {/* <TransactionItem/> */}
       <Header/>
-      <SearchBar/>
+      <SearchBar transaction={transaction} setTransactions={setTransactions} originalTransaction={originalTransaction}/>
     <Form/>
       <Transaction transactions={transaction} />
     </div>

@@ -2,19 +2,20 @@ import React,{useState} from "react";
 
 
 
-function SearchBar(){
+function SearchBar({transaction, setTransactions, originalTransaction}){
 const [hint, setHint]= useState("")
+ 
 
 
 
- const results=transaction.filter(tran=> {
-     return tran.description.toLowerCase().includes(hint.toLowerCase())
- })
 
     function handleSearch(event){
     const hint=event.target.value
         setHint(hint)
-       
+        const results=transaction.filter(tran=> {
+            return tran.description.toLowerCase().includes(hint.toLowerCase())
+        })
+        setTransactions(results)
     }
     return(
         <>
