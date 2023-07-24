@@ -1,7 +1,18 @@
 import React from "react";
 import TransactionItem from "./TransactionItem";
 
-function Transaction(transaction){
+
+function Transaction({transactions}){
+
+    const list=transactions.map(transaction=>{
+        return<TransactionItem
+        key={transaction.id}
+        date={transaction.date}
+        amount={transaction.amount}
+        description={transaction.description}
+        category={transaction.category}
+        />
+    }) 
     return(
         <table>
             <tr>
@@ -9,17 +20,8 @@ function Transaction(transaction){
                 <th>Amount</th>
                 <th>Description</th>
                 <th>Category</th>
-
             </tr>
-            {transaction.map(transaction=>{
-                return<TransactionItem
-                key={transaction.id}
-                date={transaction.date}
-                amount={transaction.amount}
-                description={transaction.description}
-                category={transaction.category}
-                />
-            })}
+             {list}
 
         </table>
 

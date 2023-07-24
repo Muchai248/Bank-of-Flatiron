@@ -22,10 +22,11 @@ function App() {
   return (
     <>
     <div>
-      <TransactionItem/>
+    
+      {/* <TransactionItem/> */}
       <Header/>
       <SearchBar/>
-   
+    
       <Transaction transactions={transaction} />
     </div>
     </>
