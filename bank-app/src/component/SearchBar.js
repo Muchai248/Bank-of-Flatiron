@@ -7,9 +7,9 @@ const [hint, setHint]= useState("")
 
 
 
-// const results=transaction.filter(tran=> {
-//     return tran.description.toLowerCase().includes(hint.toLowerCase())
-// })
+ const results=transaction.filter(tran=> {
+     return tran.description.toLowerCase().includes(hint.toLowerCase())
+ })
 
     function handleSearch(event){
     const hint=event.target.value
