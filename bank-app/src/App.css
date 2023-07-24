@@ -13,6 +13,24 @@
 }
 
 
+button{
+  text-align: center;
+  justify-content: center;
+  margin-left: 650px;
+  margin-top: 10px;
+  font-size: 20px;
 
+}
+th,td{
+  border:1px solid rgb(204, 203, 203);
+  padding: 10px;
+  
+  
+  
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
 
 

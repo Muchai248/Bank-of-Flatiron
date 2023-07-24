@@ -3,7 +3,7 @@ import Header from "./component/Header";
 import SearchBar from "./component/SearchBar";
 import TransactionItem from "./component/TransactionItem";
 import "./App.css";
-
+import Form from "./component/Form";
 import Transaction from "./component/Transaction";
 
 
@@ -26,7 +26,7 @@ function App() {
       {/* <TransactionItem/> */}
       <Header/>
       <SearchBar/>
-    
+    <Form/>
       <Transaction transactions={transaction} />
     </div>
     </>

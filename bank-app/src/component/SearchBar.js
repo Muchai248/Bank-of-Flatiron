@@ -1,12 +1,20 @@
 import React,{useState} from "react";
 
 
+
 function SearchBar(){
 const [hint, setHint]= useState("")
 
+
+
+// const results=transaction.filter(tran=> {
+//     return tran.description.toLowerCase().includes(hint.toLowerCase())
+// })
+
     function handleSearch(event){
-        event.target.value
+    const hint=event.target.value
         setHint(hint)
+       
     }
     return(
         <>
@@ -15,6 +23,7 @@ const [hint, setHint]= useState("")
         className="form-control" 
         id="exampleFormControlInput1"
         type="search" 
+        placeholder="search here"
         onChange={handleSearch}
         value={hint}
         // style={{
