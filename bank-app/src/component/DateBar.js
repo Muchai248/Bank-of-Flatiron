@@ -4,7 +4,6 @@ function DateBar(){
     return(
         <div>
           
-                <input ></input>
           
         </div>
     )
