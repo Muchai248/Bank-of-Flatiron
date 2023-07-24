@@ -19,7 +19,7 @@ const[originalTransaction, setoriginalTransaction]=useState([])
       setTransactions(transc)
       setoriginalTransaction(transc)
     })
-  },[])
+  },[transaction])
   console.log(transaction)
 
 

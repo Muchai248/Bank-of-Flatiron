@@ -104,6 +104,20 @@
       "amount": "100000",
       "category": "mazda",
       "id": 15
+    },
+    {
+      "date": "2023-07-06",
+      "description": "car",
+      "amount": "100000",
+      "category": "vitz",
+      "id": 16
+    },
+    {
+      "date": "2023-07-04",
+      "description": "marvel",
+      "amount": "100",
+      "category": "movies",
+      "id": 17
     }
   ]
 }
