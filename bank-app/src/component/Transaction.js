@@ -8,6 +8,7 @@ function Transaction(transaction){
                 <th>Date</th>
                 <th>Amount</th>
                 <th>Description</th>
+                <th>Category</th>
 
             </tr>
             {transaction.map(transaction=>{
