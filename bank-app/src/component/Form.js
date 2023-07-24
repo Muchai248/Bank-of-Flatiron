@@ -57,7 +57,7 @@ function Form({transaction, setTransactions}){
             <input onChange={handleChange} name="category"type="text" value={formData.category}placeholder="Category"></input>
             <input onChange={handleChange} name="amount"type="text" value={formData.amount}placeholder="Amount"></input>
         </div>
-            <button onClick={handleClick}>Transact</button>
+            <button onClick={handleClick}>Add Transaction</button>
         
         
         </>
