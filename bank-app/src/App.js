@@ -31,7 +31,7 @@ const[originalTransaction, setoriginalTransaction]=useState([])
       {/* <TransactionItem/> */}
       <Header/>
       <SearchBar transaction={transaction} setTransactions={setTransactions} originalTransaction={originalTransaction}/>
-    <Form transaction={transaction} />
+    <Form transaction={transaction} setTransactions={setTransactions} />
       <Transaction transactions={transaction} />
     </div>
     </>

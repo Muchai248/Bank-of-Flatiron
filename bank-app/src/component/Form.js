@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Form({transaction}){
+function Form({transaction, setTransactions}){
 
     const[formData, setFormData]= useState({
       "date":"",
@@ -20,28 +20,37 @@ function Form({transaction}){
     }
     
 
-    const handleClick = () => {
-        
+    const handleClick = (event) => {
+        event.preventDefault()
+
         const newData = {};
-    
+        console.log(formData)
         fetch('http://localhost:8001/transactions', {
           method: 'POST',
           headers: {
             'Content-Type': 'Transactions/json',
           },
-          body: JSON.stringify(newData),
+          body: JSON.stringify(formData),
         })
           .then((response) => response.json())
           .then((data) => {
+            setTransactions([...transaction,formData])
 
           })
           .catch((error) => {
             console.error('Error:', error);
-    })}
+
+    })
+
+    setFormData({
+    "date":"",
+    "description":"",
+    "amount":"",
+    "category":"",})
+}
     return(
         <>
        <div>
-            
             <label>Date:</label>
             <input onChange={handleChange} name="date" type="date" value={formData.date} style={{marginTop:"50px"}}></input>
             <input onChange={handleChange} name="description"type="text" value={formData.description}placeholder="Description" ></input>
