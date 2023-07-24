@@ -10,7 +10,7 @@ function Transaction(transaction){
                 <th>Description</th>
 
             </tr>
-            {transaction.map(transac=>{
+            {transaction.map(transaction=>{
                 return<TransactionItem
                 key={transaction.id}
                 date={transaction.date}

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import Header from "./component/Header";
 import SearchBar from "./component/SearchBar";
 import DateBar from "./component/DateBar";
-import transaction from "./component/transaction";
+import Transaction from "./component/Transaction";
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <Header/>
       <SearchBar/>
       <DateBar/>
-      <transaction transactions={transaction} />
+      <Transaction transactions={transaction} />
     </div>
     </>
   );
