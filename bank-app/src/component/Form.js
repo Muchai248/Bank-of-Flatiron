@@ -28,7 +28,7 @@ function Form({transaction, setTransactions}){
         fetch('http://localhost:8001/transactions', {
           method: 'POST',
           headers: {
-            'Content-Type': 'Transactions/json',
+            'Content-Type': 'Application/json',
           },
           body: JSON.stringify(formData),
         })
