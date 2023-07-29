@@ -139,6 +139,13 @@
       "amount": "1",
       "category": "water",
       "id": 20
+    },
+    {
+      "date": "2023-07-18",
+      "description": "drink",
+      "amount": "12",
+      "category": "juice",
+      "id": 21
     }
   ]
 }
