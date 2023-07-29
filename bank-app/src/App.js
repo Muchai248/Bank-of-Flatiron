@@ -18,10 +18,12 @@ const[originalTransaction, setoriginalTransaction]=useState([])
     .then(transc=>{
       setTransactions(transc)
       setoriginalTransaction(transc)
+      
+      console.log(transaction)
     })
-  },[transaction])
-  console.log(transaction)
-
+  },[])
+ 
+  
 
 
   return (
