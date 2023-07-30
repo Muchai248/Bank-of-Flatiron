@@ -25,7 +25,7 @@ function Form({transaction, setTransactions}){
 
         const newData = {};
         console.log(formData)
-        fetch('http://localhost:8001/transactions', {
+        fetch('http://localhost:3000/transactions', {
           method: 'POST',
           headers: {
             'Content-Type': 'Application/json',

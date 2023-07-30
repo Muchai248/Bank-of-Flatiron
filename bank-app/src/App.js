@@ -13,7 +13,7 @@ const[originalTransaction, setoriginalTransaction]=useState([])
 
   const[transaction, setTransactions]=useState([])
   useEffect(()=>{
-    fetch(" http://localhost:8001/transactions")
+    fetch(" http://localhost:3000/transactions")
     .then(resp=>resp.json())
     .then(transc=>{
       setTransactions(transc)
