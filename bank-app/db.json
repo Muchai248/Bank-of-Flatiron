@@ -97,55 +97,6 @@
       "category": "Food",
       "amount": "3000",
       "id": 14
-    },
-    {
-      "date": "2023-07-14",
-      "description": "car ",
-      "amount": "100000",
-      "category": "mazda",
-      "id": 15
-    },
-    {
-      "date": "2023-07-06",
-      "description": "car",
-      "amount": "100000",
-      "category": "vitz",
-      "id": 16
-    },
-    {
-      "date": "2023-07-04",
-      "description": "marvel",
-      "amount": "100",
-      "category": "movies",
-      "id": 17
-    },
-    {
-      "date": "2023-07-12",
-      "description": "Food",
-      "amount": "12",
-      "category": "Grocerries",
-      "id": 18
-    },
-    {
-      "date": "2023-07-12",
-      "description": "pineapple",
-      "amount": "3",
-      "category": "soda",
-      "id": 19
-    },
-    {
-      "date": "2023-07-05",
-      "description": "Drink",
-      "amount": "1",
-      "category": "water",
-      "id": 20
-    },
-    {
-      "date": "2023-07-18",
-      "description": "drink",
-      "amount": "12",
-      "category": "juice",
-      "id": 21
     }
   ]
 }
