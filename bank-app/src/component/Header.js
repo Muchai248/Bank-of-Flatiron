@@ -8,8 +8,8 @@ function Header(){
             height:"74px",
             bottom:"9px",
             color:"white",
-             backgroundColor:"purple", 
-             fontSize:"44px"}}>The Royal Bank of Flatiron</nav>
+             backgroundColor:"Green", 
+             fontSize:"44px"}}>Transaction Database</nav>
         </>
     )
 }
